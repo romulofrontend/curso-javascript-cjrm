@@ -6,12 +6,15 @@
 - Inicie o seu servidor local e abra o console do browser.
 */
 
+// :) Certo
+
 
 /*
 02 - Armazene um array vazio em uma let "brazilianFoods";
 */
 
 let brazilianFoods = [];
+// :) Certo
 
 
 
@@ -27,7 +30,8 @@ let brazilianFoods = [];
 
 brazilianFoods.push("Coxinha", null, "Brigadeiro");
 
-//console.log(brazilianFoods);
+// console.log(brazilianFoods);
+// :) Certo
 
 
 
@@ -41,7 +45,8 @@ array "brazilianFoods" (null) seja substituído por "Pão de Queijo";
 
 brazilianFoods[1] = "Pão de Queijo";
 
-//console.log(brazilianFoods[1]);
+// console.log(brazilianFoods[1]);
+// :) Certo
 
 
 /*
@@ -59,8 +64,8 @@ mas sem digitar os nomes das comidas diretamente;
 
 const foodsInfo = `Até aqui, o array \"brazilianFoods\" possui ${brazilianFoods.length} itens: ${brazilianFoods[0]}, ${brazilianFoods[1]} e ${brazilianFoods[2]}.`
 
-//console.log(foodsInfo);
-
+// console.log(foodsInfo);
+// :) Certo
 
 
 /*
@@ -79,7 +84,10 @@ const maleDogNames = ["Chico","Zeca"];
 const femaleDogNames = ["Lilica","Matilda"];
 let dogNames = maleDogNames.concat(femaleDogNames);
 
-//console.log(dogNames);
+// console.log(dogNames);
+// :) Certo
+
+
 
 /*
 07 - Comente o console.log acima e:
@@ -91,6 +99,7 @@ let dogNames = maleDogNames.concat(femaleDogNames);
 */
 
 // console.log(dogNames.join(", "));
+// :) Certo
 
 
 
@@ -107,8 +116,9 @@ utilizando o método adequado para isso;
 agora é "Lilica".
 */
 
-// console.log(dogNames.pop());
-// console.log(dogNames);
+dogNames.pop();
+// console.log(dogNames[dogNames.length-1]);
+// :( Precisei de ajuda
 
 
 /*
@@ -124,11 +134,12 @@ apenas as letras iniciais dos nomes do array "dogNames";
 */
 
 dogNames.push("Nina");
+const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[3][0]}`
 
-const initials = `${dogNames[0].slice(0,1)}${dogNames[1].slice(0,1)}${dogNames[2].slice(0,1)}${dogNames[3].slice(0,1)}${dogNames[4].slice(0,1)}`
+//const initials = `${dogNames[0].slice(0,1)}${dogNames[1].slice(0,1)}${dogNames[2].slice(0,1)}${dogNames[3].slice(0,1)}`
+// :) Certo. porém fiz um caminho diferente (comentada)
 
 // console.log(initials);
-
 
 
 /*
@@ -138,8 +149,8 @@ const initials = `${dogNames[0].slice(0,1)}${dogNames[1].slice(0,1)}${dogNames[2
 - Utilize o método adequado para isso.
 */
 
-//console.log(initials.toLowerCase());
-
+// console.log(initials.toLowerCase());
+// :) Certo
 
 
 /*
@@ -158,9 +169,10 @@ constante que você criou.
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
 
-const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(2)}${dogNames[4].slice(2).replace("n","d")}`
-//console.log(`A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`);
+const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(2)}${dogNames[3].slice(2).replace("n","d")}`
 
+// console.log(`A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`);
+// :) Certo
 
 
 /*
@@ -178,5 +190,11 @@ já tem, mais 4;
 
 let oddNumbers  = [3, 5, 7]
 oddNumbers[1] = oddNumbers[1] + 4;
-oddNumbers[1] = oddNumbers[1] * oddNumbers[1] * oddNumbers[1];
+oddNumbers[1] = oddNumbers[1] ** 3;
+//oddNumbers[1] = oddNumbers[1] * oddNumbers[1] * oddNumbers[1];
+
 console.log(oddNumbers[1]);
+// :) Certo, porém fiz um caminho diferente (comentado)
+
+
+// NOTA: 83,33
