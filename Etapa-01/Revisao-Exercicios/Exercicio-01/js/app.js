@@ -10,9 +10,13 @@ Faça o seguinte:
 - E linke este arquivo, app.js, antes do fechamento da tag body.
 */
 
+//FEITO
+
 /*
 02 - Inicie o seu servidor local e abra o console do browser.
 */
+
+//FEITO
 
 /*
 03 - Para certificar-se que este arquivo realmente está linkado, exiba a frase  
@@ -25,29 +29,38 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos
 exercícios. Inclusive o alert mencionado acima.
 */
 
+//alert("JS is Awesome!")
+//FEITO
+
 
 
 /*
 04 - Comente o alert que você escreveu acima, utilizando o comentário de uma linha.
 */
 
+//FEITO
+
 /*
 05 - Declare uma const "myBirthYear", que recebe o ano do seu nascimento, com 4  
 dígitos. Ex.: 1930.
 */
 
+const myBirthYear = 1980;
+//FEITO
 
 
 /*
 06 - Declare uma const "currentYear", que recebe o ano atual, com 4 dígitos.
 */
+const currentYear = 2023;
+//FEITO
 
 
 
 /*
 07 - Exiba as const "myBirthYear" e "currentYear", lado a lado, no console do browser.
 */
-
+console.log(myBirthYear, currentYear)
 
 
 /*
@@ -62,6 +75,9 @@ acontece.
 - Exiba a "myAge" no console.
 */
 
+const myAge = currentYear - myBirthYear
+//console.log(myAge)
+//FEITO
 
 
 /*
@@ -78,7 +94,9 @@ Não se assuste com as crases e os cifrões. Conversaremos mais sobre operaçõe
 matemáticas e strings (textos) em breve =)
 */
 
-// console.log(`Em ${valor1}, estarei com ${valor2} anos.`)
+const ten = 10
+//console.log(`Em ${currentYear + ten}, estarei com ${myAge + ten} anos.`)
+//FEITO
 
 /*
 10 - Abra o site abaixo no browser e faça o seguinte:
@@ -97,3 +115,5 @@ veja o que acontece.
 document.querySelector('#birthYear').value = SEU_ANO_DE_NASCIMENTO
 document.querySelector('.formButton').click()
 */
+
+//FEITO - O valor atribuido a constante no seletor do formulario que recebe o ano de nascimento. Ao colocar o código pra rodar é dado um click no botão de envio do form, automatizando todo o seu funcionamento.
