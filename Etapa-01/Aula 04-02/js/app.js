@@ -92,8 +92,8 @@ console.log(namesIncludesRoberto);
 
 // ====================================
 
-// OPERADORES DE COMPARAÇÃO
-console.log("OPERADORES DE COMPARAÇÃO")
+// OPERADORES DE COMPARAÇÃO NÃO ESTRITOS
+console.log("OPERADORES DE COMPARAÇÃO NÃO ESTRITOS")
 
 //Comparações com Numbers
 console.log("Comparações com Numbers")
@@ -273,3 +273,43 @@ console.log(name > "Romulo")
  
   console.log(name < "romulo")
   //true pq para js minúsculo tem peso maior que maiúsculo
+
+  console.log("==========================")
+
+
+  // OPERADORES DE COMPARAÇÃO NÃO ESTRITOS
+console.log("OPERADORES DE COMPARAÇÃO NÃO ESTRITOS")
+
+console.log(name === "Romulo")
+/// Tipo e valor são iguais?
+//true
+
+console.log(name === "romulo")
+/// Tipo e valor são iguais?
+//false
+
+console.log(name !== "Romulo")
+/// Tipo e valor não são iguais?
+//false
+
+console.log(name !== "romulo")
+/// Tipo e valor não são iguais?
+//true
+
+
+console.log(age === 42)
+/// Tipo e valor são iguais?
+//true
+
+console.log(age === '42')
+/// Tipo e valor são iguais?
+//false
+
+console.log(age !== 42)
+/// Tipo e valor não são iguais?
+//false
+
+console.log(age !== '42')
+/// Tipo e valor não são iguais?
+//true
+
