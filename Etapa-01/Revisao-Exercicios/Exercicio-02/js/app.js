@@ -8,9 +8,15 @@
 - E linke este arquivo, app.js, antes do fechamento da tag body.
 */
 
+//FEITO
+
 /*
 02 - Inicie o seu servidor local e abra o console do browser.
 */
+
+//FEITO
+
+
 
 /*
 03 - Exiba a string 'Grandes poderes trazem grandes responsabilidades.' no console do browser.
@@ -18,10 +24,8 @@
 Utilize os espaços entre os comentários abaixo para executar os códigos dos exercícios. Inclusive este.
 */
 
-//EXIBIÇÃO NO BROWSER
-//console.log('Grandes poderes trazem grandes responsabilidades.');
-
-
+//console.log('Grandes poderes trazem grandes responsabilidades.')
+//FEITO
 
 /*
 04 - Comente o console.log acima, e:
@@ -33,19 +37,20 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 - Exiba a "myFavoriteTom" no console do browser.
 */
 
-//VARIÁVEIS DECLARADAS
 const tom = 'Tom';
 const firstTom = 'Hanks';
 const secondTom = 'Cruise';
 
-//RESOLUÇÃO 01 - CONCATENAÇÃO TRADICIONAL
-//const myFavoriteTom = tom + ' ' + firstTom;
+//SOLUÇÃO 1 - Método Tradicional
+const myFavoriteTom1 = tom + " " + firstTom;
+//console.log(myFavoriteTom1);
 
-//RESOLUÇÃO 02 - CONCATENAÇÃO COM TEMPLATE STRINGS
-const myFavoriteTom = `${tom} ${secondTom}`;
+//SOLUÇÃO 2 - Usando Template String
+const myFavoriteTom2 = `${tom} ${secondTom}`;
+//console.log(myFavoriteTom2);
 
-//EXIBIÇÃO NO BROWSER
-//console.log(myFavoriteTom);
+//FEITO
+
 
 
 /*
@@ -57,18 +62,19 @@ const myFavoriteTom = `${tom} ${secondTom}`;
 - Exiba a "js" no console do browser;
 */
 
-//VARIÁVEIS DECLARADAS
 const programmingLanguage = 'JavaScript';
 
-//RESOLUÇÃO 01
-//const js = programmingLanguage.charAt(0) + programmingLanguage.charAt(4);
+//SOLUÇÃO 1 - Método Tradicional
+const js1 = programmingLanguage[0] + programmingLanguage[4]
+//console.log(js1)
+
+//SOLUÇÃO 2 - Usando Template String
+const js2 = `${programmingLanguage[0]}${programmingLanguage[4]}`
+//console.log(js2)
+
+//FEITO
 
 
-//RESOLUÇÃO 02
-//const js = programmingLanguage[0] + programmingLanguage[4];
-
-//EXIBIÇÃO NO BROWSER
-//console.log(js);
 
 
 /*
@@ -78,27 +84,20 @@ const programmingLanguage = 'JavaScript';
 - As iniciais não devem ser digitadas manualmente;
 - Exiba a "mdn" no console do browser;
 */
-const mozilla = 'Mozilla Developer Network';
 
-//MINHA RESOLUÇÃO 01
-//const mdn = mozilla.charAt(0).toLowerCase() + mozilla.charAt(8).toLowerCase() + mozilla.charAt(18).toLowerCase();
+const mozilla = 'Mozilla Developer Network'
 
+//SOLUÇÃO 1 - Método Tradicional
+const mdn1 = mozilla[0] + mozilla[8] + mozilla[18]
+//console.log(mdn1.toLowerCase())
 
+//SOLUÇÃO 2 - Usando Template String
+const mdn2 = `${mozilla[0]}${mozilla[8]}${mozilla[18]}`.toLowerCase()
+//console.log(mdn2)
 
-//RESOLUÇÃO 02
-//let mdn = mozilla.charAt(0) + mozilla.charAt(8) + mozilla.charAt(18);
-//mdn = mdn.toLowerCase();
-//console.log(mdn);
-
-//RESOLUÇÃO 03
-//const mdn = mozilla.charAt(0) + mozilla.charAt(8) + mozilla.charAt(18);
-//console.log(mdn.toLowerCase());
+//FEITO
 
 
-//RESOLUÇÃO CORREÇÃO
-//const mdn = mozilla[0] + mozilla[8] + mozilla[18];
-
-//console.log(mdn);
 
 
 /*
@@ -107,9 +106,8 @@ const mozilla = 'Mozilla Developer Network';
 - Exiba no console do browser a quantidade de caracteres que a constante "programmingLanguage" possui;
 */
 
-//EXIBIÇÃO
 //console.log(programmingLanguage.length);
-
+//FEITO
 
 
 
@@ -122,19 +120,11 @@ const mozilla = 'Mozilla Developer Network';
 - Dica: utilize a propriedade ".length".
 */
 
-//MINHA RESOLUÇÃO
-//let randomWord = 'Araponga'
-//let lastPosition = randomWord.length-1;
-//let lastLetter = randomWord.charAt(lastPosition);
+let randomWord = 'Araponga'
+//console.log(randomWord[randomWord.length-1]);
 
+//FEITO
 
-//EXIBIÇÃO
-//console.log(lastLetter);
-
-
-//RESOLUÇÃO CJRM
-//let randomWorld = "Arapiroco"
-//console.log(randomWorld[randomWorld.length-1]);
 
 
 
@@ -146,11 +136,12 @@ const mozilla = 'Mozilla Developer Network';
 - Não digite a nova string manualmente.
 */
 
-//RESOLUÇÃO
 const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
+//console.log(summerMessage.toLowerCase())
+//FEITO
 
-//EXIBIÇÃO
-//console.log(summerMessage.toLowerCase());
+
+
 
 /*
 10 - Comente o console.log acima, e,
@@ -160,11 +151,11 @@ const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 - Não digite a nova string manualmente.
 */
 
-//RESOLUÇÃO
 const winterMessage = 'o inverno está chegando'
+//console.log(winterMessage.toUpperCase())
+//FEITO
 
-//EXIBIÇÃO
-//console.log(winterMessage.toUpperCase());
+
 
 /*
 11 - Comente o console.log acima, e,
@@ -172,8 +163,10 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index do caractere "v" da "winterMessage";
 */
 
-//EXIBIÇÃO
 //console.log(winterMessage.indexOf("v"));
+//FEITO
+
+
 
 
 /*
@@ -182,8 +175,8 @@ const winterMessage = 'o inverno está chegando'
 - Exiba, no console, o index da última ocorrência do caractere "n" da "winterMessage".
 */
 
-//EXIBIÇÃO
 //console.log(winterMessage.lastIndexOf("n"));
+//FEITO
 
 
 
@@ -194,11 +187,12 @@ const winterMessage = 'o inverno está chegando'
 - Não digite a string "J.K." manualmente;
 */
 
-//RESOLUÇÃO
 const harryPotterAuthor = 'J.K. Rowling'
 
-//EXIBIÇÃO
-//console.log(harryPotterAuthor.slice(0,4));
+//console.log(harryPotterAuthor.slice(0,4))
+//FEITO
+
+
 
 /*
 14 - Comente o console.log acima, e,
@@ -208,13 +202,12 @@ const harryPotterAuthor = 'J.K. Rowling'
 - Exiba a "realBestMovie" no console.
 */
 
-
-//RESOLUÇÃO
 const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
-const realBestMovie = bestMovie.replace("La la land","Moonlight");
+const realBestMovie = bestMovie.replace("La la land","Moonlight")
+//console.log(realBestMovie)
+//FEITO
 
-//EXIBIÇÃO
-//console.log(realBestMovie); 
+
 
 /*
 15 - Comente o console.log acima, e,
@@ -223,11 +216,11 @@ const realBestMovie = bestMovie.replace("La la land","Moonlight");
 - Exiba a reminder no console. O resultado deve ser 1;
 */
 
-//RESOLUÇÃO
 const reminder = 10 % 3;
+//console.log(reminder)
+//FEITO
 
-//EXIBIÇÃO
-//console.log(reminder);
+
 
 
 /*
@@ -239,18 +232,12 @@ const reminder = 10 % 3;
 */
 
 let episodes = 6
+episodes++
+//console.log(episodes)
+//FEITO
 
-//RESOLUÇÃO 1
-//episodes = episodes + 1;
 
-//RESOLUÇÃO 2
-//episodes++
 
-//RESOLUÇÃO 3
-//episodes += 1
-
-//EXIBIÇÃO
-//console.log(episodes);
 
 /*
 17 - Comente o console.log acima, e,
@@ -260,17 +247,11 @@ let episodes = 6
 - O valor exibido no console deve ser 6.
 */
 
-//RESOLUÇÃO 1
-//episodes = episodes - 1;
+episodes--
+//console.log(episodes)
+//FEITO
 
-//RESOLUÇÃO 2
-//episodes--;
 
-//RESOLUÇÃO 3
-//episodes -= 1
-
-//EXIBIÇÃO
-//console.log(episodes);
 
 /*
 18 - Comente o console.log acima, e,
@@ -279,10 +260,10 @@ let episodes = 6
 - Após a atribuição, exiba a let "episodes" no console.
 */
 
-episodes += 4;
+episodes += 4
+//console.log(episodes)
+//FEITO
 
-//EXIBIÇÃO
-//console.log(episodes);
 
 
 /*
@@ -293,14 +274,17 @@ episodes += 4;
 - Exiba a "allEpisodes" no console.
 */
 
-//RESOLUÇÃO 1
-//const allEpisodes = "O nº de episódios é: " + episodes;
+//SOLUÇÃO 1 - Método tradicional
+const allEpisodes1 = 'O nº de episódios é: ' + episodes
+//console.log(allEpisodes1)
+//FEITO
 
-//RESOLUÇÃO 2
-//const allEpisodes = `O nº de episódios é: ${episodes}`;
+//SOLUÇÃO 2 - Template String
+const allEpisodes2 = `O nº de episódios é: ${episodes}`
+//console.log(allEpisodes2)
+//FEITO
 
-//EXIBIÇÃO
-//console.log(allEpisodes);
+
 
 
 /*
@@ -312,10 +296,12 @@ episodes += 4;
 - Não use template strings.
 */
 
-//const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.';
+const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
+//console.log(bookMessage)
+//FEITO
 
-//EXIBIÇAO
-//console.log(bookMessage);
+
+
 
 /*
 21 - Comente o console.log acima (e a const bookMessage caso não tenha descoberto a resolução), e,
@@ -328,27 +314,13 @@ episodes += 4;
 - Exiba a "newName" no console;
 */
 
-const name = 'romulo rosa';
+const name = 'walter white'
+const space = name.indexOf(" ");
+let newName = name[0].toUpperCase() + name.slice(1,space) + " " + name[space+1].toUpperCase() + name.slice(space+2)
+//console.log(newName)
+//FEITO
 
-//RESOLUÇÃO 1
-//const namesUpper = name;
 
-//const firstNameNormal = namesUpper.charAt(0);
-//const firstNameUpper = namesUpper.charAt(0).toUpperCase();
-
-//const spaceIndex = namesUpper.indexOf(" ");
-
-//const lastNameNormal = namesUpper.charAt(spaceIndex + 1);
-//const lastNameUpper = namesUpper.charAt(spaceIndex + 1).toUpperCase();
-
-//const newName = namesUpper.replace(firstNameNormal, firstNameUpper).replace(lastNameNormal, lastNameUpper);
-
-let spaceIndex = name.indexOf(" ");
-
-let newName = name[0].toUpperCase() + name.slice(1,spaceIndex) + " " + name[spaceIndex+1].toUpperCase() + name.slice(spaceIndex+2);
-
-//EXIBIÇÃO
-//console.log(newName);
 
 
 /*
@@ -361,5 +333,6 @@ let newName = name[0].toUpperCase() + name.slice(1,spaceIndex) + " " + name[spac
 - Exiba a "newName" no console;
 */
 
-newName = `${name[0].toUpperCase()}${name.slice(1,spaceIndex)} ${name[spaceIndex+1].toUpperCase()}${name.slice(spaceIndex+2)}`;
-console.log(newName);
+newName = `${name[0].toUpperCase()}${name.slice(1,space)} ${name[space+1].toUpperCase()}${name.slice(space+2)}`
+console.log(newName)
+//FEITO
