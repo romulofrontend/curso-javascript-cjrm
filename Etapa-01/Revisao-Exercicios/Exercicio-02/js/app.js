@@ -9,12 +9,18 @@
 */
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
 
 /*
 02 - Inicie o seu servidor local e abra o console do browser.
 */
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -26,6 +32,10 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 
 //console.log('Grandes poderes trazem grandes responsabilidades.')
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
 
 /*
 04 - Comente o console.log acima, e:
@@ -50,6 +60,8 @@ const myFavoriteTom2 = `${tom} ${secondTom}`;
 //console.log(myFavoriteTom2);
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -73,6 +85,7 @@ const js2 = `${programmingLanguage[0]}${programmingLanguage[4]}`
 //console.log(js2)
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -96,6 +109,7 @@ const mdn2 = `${mozilla[0]}${mozilla[8]}${mozilla[18]}`.toLowerCase()
 //console.log(mdn2)
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -108,6 +122,7 @@ const mdn2 = `${mozilla[0]}${mozilla[8]}${mozilla[18]}`.toLowerCase()
 
 //console.log(programmingLanguage.length);
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -124,6 +139,7 @@ let randomWord = 'Araponga'
 //console.log(randomWord[randomWord.length-1]);
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -139,6 +155,7 @@ let randomWord = 'Araponga'
 const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 //console.log(summerMessage.toLowerCase())
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -154,6 +171,8 @@ const summerMessage = 'O VERÃO CHEGA NESTE FIM DE SEMANA'
 const winterMessage = 'o inverno está chegando'
 //console.log(winterMessage.toUpperCase())
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -165,6 +184,7 @@ const winterMessage = 'o inverno está chegando'
 
 //console.log(winterMessage.indexOf("v"));
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -177,6 +197,8 @@ const winterMessage = 'o inverno está chegando'
 
 //console.log(winterMessage.lastIndexOf("n"));
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -191,6 +213,8 @@ const harryPotterAuthor = 'J.K. Rowling'
 
 //console.log(harryPotterAuthor.slice(0,4))
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -206,6 +230,8 @@ const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!'
 const realBestMovie = bestMovie.replace("La la land","Moonlight")
 //console.log(realBestMovie)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -219,6 +245,7 @@ const realBestMovie = bestMovie.replace("La la land","Moonlight")
 const reminder = 10 % 3;
 //console.log(reminder)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -235,6 +262,7 @@ let episodes = 6
 episodes++
 //console.log(episodes)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -250,6 +278,8 @@ episodes++
 episodes--
 //console.log(episodes)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -263,6 +293,8 @@ episodes--
 episodes += 4
 //console.log(episodes)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -284,6 +316,8 @@ const allEpisodes2 = `O nº de episódios é: ${episodes}`
 //console.log(allEpisodes2)
 //FEITO
 
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -299,6 +333,7 @@ const allEpisodes2 = `O nº de episódios é: ${episodes}`
 const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
 //console.log(bookMessage)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -319,7 +354,7 @@ const space = name.indexOf(" ");
 let newName = name[0].toUpperCase() + name.slice(1,space) + " " + name[space+1].toUpperCase() + name.slice(space+2)
 //console.log(newName)
 //FEITO
-
+//CORREÇÃO: CERTO :) Diferente do professor, fiz de forma que se o nome e/ou sobrenome forem trocados continue exibindo corretamente
 
 
 
@@ -336,3 +371,8 @@ let newName = name[0].toUpperCase() + name.slice(1,space) + " " + name[space+1].
 newName = `${name[0].toUpperCase()}${name.slice(1,space)} ${name[space+1].toUpperCase()}${name.slice(space+2)}`
 console.log(newName)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
+//APROVEITAMENTO: 100%! QUE FODA!!!
