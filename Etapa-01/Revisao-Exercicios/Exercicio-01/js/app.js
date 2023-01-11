@@ -11,12 +11,20 @@ Faça o seguinte:
 */
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
 
 /*
 02 - Inicie o seu servidor local e abra o console do browser.
 */
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
 
 /*
 03 - Para certificar-se que este arquivo realmente está linkado, exiba a frase  
@@ -31,6 +39,8 @@ exercícios. Inclusive o alert mencionado acima.
 
 //alert("JS is Awesome!")
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -39,6 +49,10 @@ exercícios. Inclusive o alert mencionado acima.
 */
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
 
 /*
 05 - Declare uma const "myBirthYear", que recebe o ano do seu nascimento, com 4  
@@ -47,6 +61,9 @@ dígitos. Ex.: 1930.
 
 const myBirthYear = 1980;
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
 
 
 /*
@@ -54,6 +71,8 @@ const myBirthYear = 1980;
 */
 const currentYear = 2023;
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -61,6 +80,10 @@ const currentYear = 2023;
 07 - Exiba as const "myBirthYear" e "currentYear", lado a lado, no console do browser.
 */
 console.log(myBirthYear, currentYear)
+//FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
 
 
 /*
@@ -78,6 +101,9 @@ acontece.
 const myAge = currentYear - myBirthYear
 //console.log(myAge)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
 
 
 /*
@@ -97,6 +123,10 @@ matemáticas e strings (textos) em breve =)
 const ten = 10
 //console.log(`Em ${currentYear + ten}, estarei com ${myAge + ten} anos.`)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
 
 /*
 10 - Abra o site abaixo no browser e faça o seguinte:
@@ -117,3 +147,8 @@ document.querySelector('.formButton').click()
 */
 
 //FEITO - O valor atribuido a constante no seletor do formulario que recebe o ano de nascimento. Ao colocar o código pra rodar é dado um click no botão de envio do form, automatizando todo o seu funcionamento.
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
+//APROVEITAMENTO: 100%! QUE FODA!!!
