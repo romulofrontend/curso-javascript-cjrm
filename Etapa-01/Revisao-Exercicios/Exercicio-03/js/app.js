@@ -7,6 +7,7 @@
 */
 
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -17,6 +18,8 @@
 
 let brazilianFoods = []
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -33,6 +36,7 @@ let brazilianFoods = []
 brazilianFoods.push('Coxinha', null, 'Brigadeiro')
 //console.log(brazilianFoods)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -48,7 +52,7 @@ array "brazilianFoods" (null) seja substituído por "Pão de Queijo";
 brazilianFoods[1] = "Pão de Queijo"
 //console.log(brazilianFoods[1])
 //FEITO
-
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -69,6 +73,8 @@ mas sem digitar os nomes das comidas diretamente;
 const foodsInfo = `Até aqui, o array "brazilianFoods" possui ${brazilianFoods.length} itens: ${brazilianFoods[0]}, ${brazilianFoods[1]} e ${brazilianFoods[2]}.`
 //console.log(foodsInfo)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
 
 
 
@@ -89,6 +95,7 @@ const femaleDogNames = ['Lilica', 'Matilda']
 const dogNames = maleDogNames.concat(femaleDogNames)
 //console.log(dogNames)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -103,8 +110,8 @@ const dogNames = maleDogNames.concat(femaleDogNames)
 */
  
 //console.log(dogNames.join(', '));
- //FEITO
-
+//FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -125,7 +132,7 @@ agora é "Lilica".
 dogNames.pop()
 //console.log(dogNames[dogNames.length-1])
 //FEITO
-
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -145,7 +152,7 @@ dogNames.push("Nina")
 const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[3][0]}`
 //console.log(initials)
 //FEITO
-
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -159,6 +166,7 @@ const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[
 
 //console.log(initials.toLowerCase())
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -178,10 +186,12 @@ constante que você criou.
 
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
-console.log(dogNames)
+
+//console.log(dogNames)
 const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(2)}${dogNames[3].slice(2).replace('n','d')}`
 //console.log(`A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
 
 
 
@@ -200,6 +210,11 @@ já tem, mais 4;
 */
 
 let oddNumbers = [3, 5, 7]
-oddNumbers[1] = oddNumbers[1] + 4
+oddNumbers[1] += 4
 console.log(oddNumbers[1] ** 3)
 //FEITO
+//CORREÇÃO: CERTO :) Igual ao professor
+
+
+
+//APROVEITAMENTO: 100%! QUE FODA!!!
