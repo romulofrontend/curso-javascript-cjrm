@@ -31,6 +31,8 @@ while(i <= 5){
 }
 */
 
+//CORREÇÃO: Certo - Idêntico ao professor - :)
+
 
 
 /*
@@ -46,6 +48,8 @@ for(let i = 0; i <= 5; i++){
   console.log(i);
 }
 */
+
+//CORREÇÃO: Certo - Idêntico ao professor - :)
 
 
 
@@ -78,6 +82,8 @@ for(let i = 1; i <= 10; i++){
 }
 */
 
+//CORREÇÃO: Certo - Idêntico ao professor - :)
+
 
 
 /*
@@ -97,13 +103,14 @@ let upperCaseCities = []
 
 //FEITO COM LOOP FOR E WHILE
 
-/*
-for(let i = 0; i < cities.length; i++){
+
+/*for(let i = 0; i < cities.length; i++){
   upperCaseCities[i] = cities[i].toLocaleUpperCase()    
 }
 
-console.log(upperCaseCities)
-*/
+console.log(upperCaseCities)*/
+
+//CORREÇÃO: Resultado está certo, mas professor fez de forma mais eficiente.
 
 /*let i = 0;
 
@@ -113,8 +120,9 @@ while(i < cities.length){
   i++
 }
 
-console.log(upperCaseCities)
-*/
+console.log(upperCaseCities)*/
+
+//CORREÇÃO: Resultado está certo. Professor não com loop while
 
 
 /*
@@ -132,14 +140,16 @@ let horizontalList = ""
 
 //FEITO COM FOR E WHILE
 
-/*
-  for(let i = 0; i < names.length; i++){ 
+
+  /*for(let i = 0; i < names.length; i++){ 
     const HTMLTemplate = `<li>${names[i]}</li>`
     horizontalList += HTMLTemplate
   }
 
-  console.log(horizontalList)
-*/
+  console.log(horizontalList)*/
+
+  //CORREÇÃO: Correto, porém professor fez de forma mais eficiente
+
 
 
 /*
@@ -156,7 +166,7 @@ while(i < names.length){
 console.log(horizontalList)
 */  
 
-
+//CORREÇÃO: Correto, porém professor não fez usando loop while
   
 
 /*
@@ -170,16 +180,18 @@ console.log(horizontalList)
 
 //FEITO
 
-/*
-const numbers = ['91', '5', '30', '97', '83', '31']
+
+/*const numbers = ['91', '5', '30', '97', '83', '31']
 let soma = null
 
 for(let i = 0; i < numbers.length; i++){
   soma += Number(numbers[i])
 }
 
-console.log(soma === 337);
-*/
+console.log(soma === 337);*/
+
+//CORREÇÃO: Correto. Idêntico ao professor :)
+
 
 
 
@@ -211,19 +223,19 @@ const arrays = [
 
 //FEITO
 
-/*
-let soma = null;
+
+/*let soma = null;
 
 for(let i = 0; i < arrays.length; i++){
-  for(let j = 0; j < arrays[j].length; j++){    
+  for(let j = 0; j < arrays[i].length; j++){    
     soma += arrays[i][j]    
   }  
 }
 
-console.log(soma)
-*/
+console.log(soma)*/
 
 
+//CORREÇÃO: Correto. Idêntico ao professor :)
 
 
-
+//APROVEITAMENTO: 8,5
