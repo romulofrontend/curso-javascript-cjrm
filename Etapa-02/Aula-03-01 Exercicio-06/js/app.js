@@ -55,16 +55,18 @@ if (fruits.includes(searchFruit1)){
   lógico precisam ter a constante especificada. Exemplo: hour > x && hour < y.
 */
 
-const hour = 18
+const examHour = 6
+const testMorning = examHour >= 6 && examHour <= 11
+const testEvening = examHour >= 12 && examHour <= 17
 
-if (hour >= 6 && hour <= 11){
+if (testMorning){
   console.log("Bom dia!")
-} else if (hour >= 12 && hour <= 17){
+} else if (testEvening){
   console.log("Bom tarde!")
 } else{
   console.log("Bom noite!")
 }
-//FEITO
+//FEITO E OTIMIZADO
 
 
 
@@ -85,16 +87,17 @@ if (hour >= 6 && hour <= 11){
     também está funcionando.
 */
 
-const age = 70
+const age = 64
 let message = "Para você, a entrada é grátis!"
+const testGratuity = age <= 7 || age >= 65
 
-if (age <= 7 || age >= 65){
+if (testGratuity){
   console.log(message)
 }else{
   message = "A entrada é R$ 30,00."
   console.log(message)
 }
-//FEITO
+//FEITO e OTIMIZADO
 
 
 
@@ -113,13 +116,15 @@ if (age <= 7 || age >= 65){
 const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99]
 const newNumbers = [];
 
-/*for(let i = 0; i < numbers.length; i++){
+/*
+for(let i = 0; i < numbers.length; i++){
   if(numbers[i] >= 11 && numbers[i] <= 90){    
     newNumbers.push(numbers[i]);
   }
 }
 
-console.log(newNumbers)*/
+console.log(newNumbers)
+*/
 //FEITO
 
 
@@ -142,21 +147,22 @@ const crazyArray = [true, 869, 'oi', 71, false, 83, '35', true, 397, 'js', false
 let resultBoolean = 0;
 let resultNumber = 0;
 let resultString = 0;
-let resultType = '';
 
-/*for(let i = 0; i < crazyArray.length; i++){
-  resultType = typeof crazyArray[i];
-  if (resultType === "boolean"){
+for(let i = 0; i < crazyArray.length; i++){  
+  const testBoolean = typeof crazyArray[i] === "boolean";
+  const testNumber = typeof crazyArray[i] === "number";
+
+  if (testBoolean){
     resultBoolean++
-  } else if (resultType === "number"){
+  } else if (testNumber){
     resultNumber++
   } else {
     resultString++
   }  
 }
 
-console.log(`O crazyArray tem ${resultBoolean} booleans, ${resultNumber} números e ${resultString} strings`)*/
-//FEITO
+console.log(`O crazyArray tem ${resultBoolean} booleans, ${resultNumber} números e ${resultString} strings`)
+//FEITO E OTIMIZADO
 
 
 
@@ -179,27 +185,32 @@ console.log(`O crazyArray tem ${resultBoolean} booleans, ${resultNumber} número
 */
 
 const randomNumbers = [73, 4, 67, 10, 31, 58]
-let numberAtual = 0;
-const randomNumbersImpar = [];
-const randomNumbersPar = [];
+let randomNumbersOdd = [];
+let randomNumbersPair = [];
 
+//Criando o array pra iterar random Number e preencher randomNumbersOdd e randomNumbersPair
 for (let i = 0; i < randomNumbers.length; i++){
   if(randomNumbers[i] % 2 === 1){
-    randomNumbersImpar.push(randomNumbers[i])
+    randomNumbersOdd.push(randomNumbers[i])
   }else{
-    randomNumbersPar.push(randomNumbers[i])
+    randomNumbersPair.push(randomNumbers[i])
   }
 }
 
-let stringRandomNumbersImpar = randomNumbersImpar.join(", ");
-let stringRandomNumbersPar = randomNumbersPar.join(", ");
+//Transformando o array em string e colocando ", "
+randomNumbersOdd = randomNumbersOdd.join(", ");
+randomNumbersPair = randomNumbersPair.join(", ");
 
-let stringLastVirgulaImpar = stringRandomNumbersImpar.lastIndexOf(",")
-let stringLastVirgulaPar = stringRandomNumbersPar.lastIndexOf(",")
+//Verificando a última vírgula de cada string
+let lastCommaOdd = randomNumbersOdd.lastIndexOf(",");
+let lastCommaPair = randomNumbersPair.lastIndexOf(",");
 
-stringRandomNumbersImpar = `${stringRandomNumbersImpar.slice(0, stringLastVirgulaImpar)}${stringRandomNumbersImpar[stringLastVirgulaImpar].replace(","," e")}${stringRandomNumbersImpar.slice(stringLastVirgulaImpar + 1)}`
+//Trocando a última vígula por e
+randomNumbersOdd = `${randomNumbersOdd.slice(0, lastCommaOdd)}${randomNumbersOdd[lastCommaOdd].replace(","," e")}${randomNumbersOdd.slice(lastCommaOdd + 1)}`
 
-stringRandomNumbersPar = `${stringRandomNumbersPar.slice(0, stringLastVirgulaPar)}${stringRandomNumbersPar[stringLastVirgulaPar].replace(","," e")}${stringRandomNumbersPar.slice(stringLastVirgulaPar + 1)}`
+//Trocando a última vígula por e
+randomNumbersPair = `${randomNumbersPair.slice(0, lastCommaPair)}${randomNumbersPair[lastCommaPair].replace(","," e")}${randomNumbersPair.slice(lastCommaPair + 1)}`
 
-console.log(`Numeros ímpares: ${stringRandomNumbersImpar}. Números pares: ${stringRandomNumbersPar}.`)
-//FEITO
+//Exibindo o resultado no console como solicitado
+console.log(`Numeros ímpares: ${randomNumbersOdd}. Números pares: ${randomNumbersPair}.`)
+//FEITO E OTIMIZADO
