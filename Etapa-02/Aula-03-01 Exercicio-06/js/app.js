@@ -1,3 +1,10 @@
+//CORREÇÃO
+//🏆 100% DE APROVEITAMENTO
+//Durante a correção o professor ensinou formas de melhorar a legibilidade do código, tema que não foi abordado anteriormente
+//Todos os códigos estavam certos, chegando aos resultados solicitados 😍
+//Após a correção já otimizei todos os códigos com base nas orientações da aula
+
+
 /*
   - A partir deste exercício, você está livre para escolher os nomes das suas  
     variáveis e constantes!
@@ -24,22 +31,27 @@
 */
 
 const fruits = ['morango', 'banana', 'mamão'] 
-const searchFruit1 = "abacaxi";
-const searchFruit2 = "pera";
+const fruit1 = "abacaxi";
+const fruit2 = "pera";
+let fruit = null
+let fruitMessage = null;
+const hasFruitMessage = `A string ${fruit} existe no array fruits.`
+const noFruitsMessage = `Nem ${fruit2} nem ${fruit1} existem no array "fruits".`
 
-if (fruits.includes(searchFruit1)){
-  console.log(`A string ${searchFruit1} existe no array fruits.`)
-} else if (fruits.includes(searchFruit2)){
-  console.log(`A string ${searchFruit2} existe no array fruits.`)
+if (fruits.includes(fruit1)){
+  fruit = fruit1;
+  fruitMessage = hasFruitMessage;
+} else if (fruits.includes(fruit2)){
+  fruit = fruit2;
+  fruitMessage = hasFruitMessage;
 } else{
-  console.log(`Nem ${searchFruit2} nem ${searchFruit1} existem no array "fruits".`)
+  fruitMessage = noFruitsMessage;  
 }
 
-//FEITO
-
-
-
-
+console.log(fruitMessage)
+//CORREÇÃO: CERTO 😍
+//Cheguei no resultado solicitado
+//Conforme as novas orientações do professor, melhorei a legibilidade colocando umas coisas em variaveis
 
 
 /*
@@ -58,18 +70,23 @@ if (fruits.includes(searchFruit1)){
 const examHour = 6
 const testMorning = examHour >= 6 && examHour <= 11
 const testEvening = examHour >= 12 && examHour <= 17
+let messageTurn = null;
+const messageMorning = "Bom dia!";
+const messageAfternoon = "Boa tarde!";
+const messageNight = "Boa noite!";
 
 if (testMorning){
-  console.log("Bom dia!")
+  messageTurn = messageMorning;
 } else if (testEvening){
-  console.log("Bom tarde!")
+  messageTurn = messageAfternoon
 } else{
-  console.log("Bom noite!")
+  messageTurn = messageNight;
 }
-//FEITO E OTIMIZADO
 
-
-
+console.log(messageTurn)
+//CORREÇÃO: CERTO 😍
+//Cheguei no resultado solicitado
+//Conforme as novas orientações do professor, apenas melhorei a legibilidade colocando umas coisas em variaveis
 
 
 
@@ -87,17 +104,27 @@ if (testMorning){
     também está funcionando.
 */
 
-const age = 64
-let message = "Para você, a entrada é grátis!"
-const testGratuity = age <= 7 || age >= 65
+const ageUser = 64
+const ageMin = 7
+const ageMax = 65
+const isChild = ageUser <= ageMin
+const isOlder = ageUser >= ageMax
+const testAge = isChild || isOlder
+let messageStatus = null
+const messageFree = "Para você, a entrada é grátis!"
+const messagePay = "A entrada é R$ 30,00."
 
-if (testGratuity){
-  console.log(message)
+if (testAge){
+  messageStatus = messageFree
 }else{
-  message = "A entrada é R$ 30,00."
-  console.log(message)
+  messageStatus = messagePay
 }
-//FEITO e OTIMIZADO
+
+console.log(messageStatus)
+//CORREÇÃO: CERTO 😍
+//Cheguei no resultado solicitado
+//Conforme as novas orientações do professor, apenas melhorei a legibilidade colocando umas coisas em variaveis//Professor usou um método melhor pra organizar condicionais e exibir a mensagem (já inseri no código)
+//Coloquei a condição numa variavel, pois caso fosse necessário mudar o teste não precisaria mexer direto no código
 
 
 
@@ -113,21 +140,27 @@ if (testGratuity){
   - O resultado deve ser: [34, 46, 90, 25, 11, 89, 76].
 */
 
-const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99]
-const newNumbers = [];
+const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99] 
+const numbersSelected = [];
 
-/*
+
 for(let i = 0; i < numbers.length; i++){
-  if(numbers[i] >= 11 && numbers[i] <= 90){    
-    newNumbers.push(numbers[i]);
+  const numbersItem = numbers[i];
+  const numbersMin = 11;
+  const numbersMax = 90;
+  const numbersFirst = numbersItem >= numbersMin;
+  const numbersLast = numbersItem <= numbersMax;
+  const testNumbers = numbersFirst && numbersLast;
+
+  if(testNumbers){    
+    numbersSelected.push(numbersItem);
   }
 }
 
-console.log(newNumbers)
-*/
-//FEITO
-
-
+console.log(numbersSelected)
+//CORREÇÃO: CERTO 😍
+//Cheguei no resultado solicitado
+//Conforme as novas orientações do professor, apenas melhorei a legibilidade colocando umas coisas em variaveis
 
 
 /*
@@ -144,27 +177,28 @@ console.log(newNumbers)
 */
 
 const crazyArray = [true, 869, 'oi', 71, false, 83, '35', true, 397, 'js', false]
-let resultBoolean = 0;
-let resultNumber = 0;
-let resultString = 0;
+let sumBoolean = 0;
+let sumNumber = 0;
+let sumString = 0;
 
 for(let i = 0; i < crazyArray.length; i++){  
-  const testBoolean = typeof crazyArray[i] === "boolean";
-  const testNumber = typeof crazyArray[i] === "number";
+  const typeItem = typeof crazyArray[i];
+  const testBoolean = typeItem === "boolean";
+  const testNumber = typeItem === "number";
 
   if (testBoolean){
-    resultBoolean++
+    sumBoolean++
   } else if (testNumber){
-    resultNumber++
+    sumNumber++
   } else {
-    resultString++
+    sumString++
   }  
 }
 
-console.log(`O crazyArray tem ${resultBoolean} booleans, ${resultNumber} números e ${resultString} strings`)
-//FEITO E OTIMIZADO
-
-
+console.log(`O crazyArray tem ${sumBoolean} booleans, ${sumNumber} números e ${sumString} strings`)
+//CORREÇÃO: CERTO 😍
+//Cheguei no resultado solicitado
+//Conforme as novas orientações do professor apenas melhorei a legibilidade colocando umas coisas em variaveis
 
 
 /*
@@ -185,32 +219,40 @@ console.log(`O crazyArray tem ${resultBoolean} booleans, ${resultNumber} número
 */
 
 const randomNumbers = [73, 4, 67, 10, 31, 58]
-let randomNumbersOdd = [];
-let randomNumbersPair = [];
+let oddNumbers = [];
+let evenNumbers = [];
 
 //Criando o array pra iterar random Number e preencher randomNumbersOdd e randomNumbersPair
 for (let i = 0; i < randomNumbers.length; i++){
-  if(randomNumbers[i] % 2 === 1){
-    randomNumbersOdd.push(randomNumbers[i])
+  const number = randomNumbers[i];
+  const testOdd = number % 2 === 1;
+
+  if(testOdd){
+    oddNumbers.push(number)
   }else{
-    randomNumbersPair.push(randomNumbers[i])
+    evenNumbers.push(number)
   }
 }
 
 //Transformando o array em string e colocando ", "
-randomNumbersOdd = randomNumbersOdd.join(", ");
-randomNumbersPair = randomNumbersPair.join(", ");
+oddNumbers = oddNumbers.join(", ");
+evenNumbers = evenNumbers.join(", ");
 
 //Verificando a última vírgula de cada string
-let lastCommaOdd = randomNumbersOdd.lastIndexOf(",");
-let lastCommaPair = randomNumbersPair.lastIndexOf(",");
+const lastCommaOdd = oddNumbers.lastIndexOf(",");
+const lastCommaEven = evenNumbers.lastIndexOf(",");
 
 //Trocando a última vígula por e
-randomNumbersOdd = `${randomNumbersOdd.slice(0, lastCommaOdd)}${randomNumbersOdd[lastCommaOdd].replace(","," e")}${randomNumbersOdd.slice(lastCommaOdd + 1)}`
+oddNumbers = `${oddNumbers.slice(0, lastCommaOdd)}${oddNumbers[lastCommaOdd].replace(","," e")}${oddNumbers.slice(lastCommaOdd + 1)}`
 
 //Trocando a última vígula por e
-randomNumbersPair = `${randomNumbersPair.slice(0, lastCommaPair)}${randomNumbersPair[lastCommaPair].replace(","," e")}${randomNumbersPair.slice(lastCommaPair + 1)}`
+evenNumbers = `${evenNumbers.slice(0, lastCommaEven)}${evenNumbers[lastCommaEven].replace(","," e")}${evenNumbers.slice(lastCommaEven + 1)}`
 
 //Exibindo o resultado no console como solicitado
-console.log(`Numeros ímpares: ${randomNumbersOdd}. Números pares: ${randomNumbersPair}.`)
-//FEITO E OTIMIZADO
+console.log(`Numeros ímpares: ${oddNumbers}. Números pares: ${evenNumbers}.`)
+//CORREÇÃO: CERTO 😍
+//Cheguei no resultado solicitado
+//Conforme as novas orientações do professor apenas melhorei a legibilidade colocando umas coisas em variaveis
+
+
+//🏆 100% DE APROVEITAMENTO
